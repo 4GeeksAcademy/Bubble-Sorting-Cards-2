@@ -1,1 +1,101 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(46 172 105);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: white;
+}
+
+.controls input,
+.controls button {
+  margin: 0 10px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 60px;
+  height: 90px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.top-left-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 20px;
+}
+
+.bottom-right-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 20px;
+}
+
+.card-value {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.top-left-icon.red i,
+.bottom-right-icon.red i {
+  color: red;
+}
+
+.top-left-icon.black i,
+.bottom-right-icon.black i {
+  color: black;
+}
+
+.changes-log {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.log-step {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.log-step:hover {
+  background-color: rgba(97, 96, 96, 0.3);
+}
+
+.log-index {
+  min-width: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+}

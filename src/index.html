@@ -1,4 +1,40 @@
 <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta Aleatoria</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <label for="numCards">Original:</label>
+      <input
+        type="number"
+        id="numCards"
+        placeholder="Número de cartas"
+        min="1"
+      />
+      <button onclick="drawCards()">Dibujar</button>
+      <button onclick="sortCards()">Ordenar</button>
+    </div>
+
+    <div id="cardsContainer" class="cards-container"></div>
+    <h4>Registro de Cambios:</h4>
+    <div id="changesLog" class="changes-log"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -21,9 +57,9 @@
         an error
       </p>
       <div class="fixed-bottom p-4">
-        Made with ❤️ by
+        Made with  by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>
   </body>
-</html>
+</html> -->
